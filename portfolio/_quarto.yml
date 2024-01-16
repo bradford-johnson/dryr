@@ -1,0 +1,29 @@
+project:
+  type: website
+  resources:
+    - robots.txt
+  output-dir: docs
+
+website:
+  title: "Bradford Johnson"
+  site-url: 'https://ford-johnson.com/'
+  
+  google-analytics: "G-1BB9B4C1GN"
+  
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: Home
+      - projects/index.qmd
+
+  page-footer:
+    left: "Created by [Bradford Johnson](https://github.com/bradfordjohnson) © 2024"
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
