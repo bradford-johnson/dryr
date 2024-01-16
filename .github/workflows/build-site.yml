@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'portfolio/**'
+      - 'portfolio/**'     
+  workflow_dispatch:
 
 permissions:
   contents: read
