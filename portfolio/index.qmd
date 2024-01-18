@@ -2,8 +2,99 @@
 format:
   html:
     page-layout: full
+execute:
+  echo: false
+  output: false
 ---
 
-This is a Quarto website.
+```{=html}
+<div id="chart"></div>
+```
+```{ojs}
+d3 = require("d3")
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+function generateNormalData(mean, stdDev, resolution) {
+  const normalData = [];
+  const step = 1 / resolution;
+
+  for (let x = 0; x <= 1; x += step) {
+    const exponent = -((x - mean) ** 2) / (2 * stdDev ** 2);
+    const y = (1 / (stdDev * Math.sqrt(2 * Math.PI))) * Math.exp(exponent);
+    normalData.push({ x, y });
+  }
+
+  return normalData;
+}
+
+chartContainer = d3.select("#chart");
+
+width = window.innerWidth * 0.3;
+height = window.innerHeight * 0.15;
+
+mean = 0.5;
+
+stdDev = 0.1;
+
+resolution = 100;
+
+data = generateNormalData(mean, stdDev, resolution);
+
+data2stdDev = generateNormalData(mean + 2 * stdDev, stdDev, resolution);
+
+xScale = d3.scaleLinear()
+  .domain([0, d3.max(data, d => d.x)])
+  .range([0, width]);
+
+yScale = d3.scaleLinear()
+  .domain([0, d3.max(data, d => d.y)])
+  .range([height, 0]);
+
+line = d3.line()
+  .x(d => xScale(d.x))
+  .y(d => yScale(d.y));
+
+margin = ({ top: 20, right: 20, bottom: 20, left: 20 });
+
+svg = d3.select("#chart")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", `translate(${margin.left},${margin.top})`);
+
+ svg.append("path")
+  .data([data])
+  .attr("class", "line")
+  .attr("d", line)
+  .style("stroke", "#1a1a1a")
+  .style("stroke-width", 2)
+  .style("fill", "none")
+  .transition()
+  .duration(2500)
+  .attrTween("stroke-dasharray", function () {
+    const totalLength = this.getTotalLength();
+    return function (t) {
+      return (d3.interpolateString("0," + totalLength, totalLength + ",0"))(t);
+    };
+  });
+
+svg.append("path")
+  .data([data2stdDev])
+  .attr("class", "line")
+  .attr("d", line)
+  .style("stroke", "#d9534f")
+  .style("stroke-width", 2)
+  .style("fill", "none")
+  .transition()
+  .duration(4000)
+  .attrTween("stroke-dasharray", function () {
+    const totalLength = this.getTotalLength();
+    return function (t) {
+      return (d3.interpolateString("0," + totalLength, totalLength + ",0"))(t);
+    };
+  });
+
+xAxis = d3.axisBottom(xScale);
+
+yAxis = d3.axisLeft(yScale);
+```

@@ -16,14 +16,15 @@ website:
       - href: index.qmd
         text: Home
       - projects/index.qmd
-
+    right:
+      - icon: linkedin
+        href: https://linkedin.com/in/bradford-ford-johnson
+      - icon: github
+        href: https://github.com/bradfordjohnson
   page-footer:
     left: "Created by [Bradford Johnson](https://github.com/bradfordjohnson) © 2024"
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: "_variables.scss"
     toc: true
-
-
-
