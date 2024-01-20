@@ -12,6 +12,7 @@ website:
   
   navbar:
     background: light
+    title: false
     left:
       - href: index.qmd
         text: Home

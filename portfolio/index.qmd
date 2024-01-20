@@ -7,9 +7,80 @@ execute:
   output: false
 ---
 
+<div class="alert alert-dismissible alert-warning">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <h4 class="alert-heading">Under Construction!</h4>
+  <p class="mb-0">We're Cooking Up Something Fresh! Check Back Soon!</p>
+</div>
+
+<h1 class="title">Bradford Johnson</h1>
+<p class="subtitle lead">Data Analyst & Visualization Engineer</p>
+<div class="description">Design and implement visually striking data visualizations, translating complex data into meaningful narratives that drive business success.</div>
+<br>
 ```{=html}
-<div id="chart"></div>
+<button type="button" class="btn btn-outline-primary">Get in touch</button>
 ```
+
+<br>
+
+<div class="card-group">
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<h4 class="card-title">Data Visualization</h4>
+<p class="card-text"> 
+  Through skillful storytelling and attention to industry standards, I create deliverables that not only inform but truly engage. The goal is not just to present data; it's to immerse the audience in a meaningful and memorable data-driven experience.
+</p>
+</div>
+</div>
+
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<h4 class="card-title">Data Warehousing & Pipelines</h4>
+<p class="card-text"> 
+  Experienced in building distributed systems and ETL pipelines, I specialize in creating unified data ecosystems. I streamline workflows and ensure seamless data transformation, aiming to facilitate insightful decision-making across the entire system.
+</p>
+</div>
+</div>
+</div>
+
+<div class="card-group">
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<h4 class="card-title">Data Visualization</h4>
+<p class="card-text"> 
+  Through skillful storytelling and attention to industry standards, I create deliverables that not only inform but truly engage. The goal is not just to present data; it's to immerse the audience in a meaningful and memorable data-driven experience.
+</p>
+</div>
+</div>
+
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<h4 class="card-title">Data Warehousing & Pipelines</h4>
+<p class="card-text"> 
+  Experienced in building distributed systems and ETL pipelines, I specialize in creating unified data ecosystems. I streamline workflows and ensure seamless data transformation, aiming to facilitate insightful decision-making across the entire system.
+</p>
+</div>
+</div>
+</div>
+
+<br>
+
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">About Me</h4>
+<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<a href="#" class="card-link">Card link</a>
+<a href="#" class="card-link">Another link</a>
+</div>
+</div>
+
+<br>
+
+
+
+<!---<div class="chart"></div>--->
+
 ```{ojs}
 d3 = require("d3")
 
