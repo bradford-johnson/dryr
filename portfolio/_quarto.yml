@@ -16,7 +16,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - projects/index.qmd
+      #- projects/index.qmd
     right:
       - icon: linkedin
         href: https://linkedin.com/in/bradford-ford-johnson

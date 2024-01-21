@@ -364,3 +364,36 @@ nav a.nav-link:hover {
 h4.card-title {
   color: #1a1a1a;
 }
+
+.card-body.center {
+  // align-items: center;
+  // justify-content: center;
+  // align-content: center;
+  text-align: center;
+}
+
+h1.title.center {
+  text-align: center;
+  align-self: center;
+}
+
+p.subtitle.lead.center {
+  text-align: center;
+}
+
+.description.center {
+  text-align: center;
+}
+
+h4.card-title.center {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: bold;
+  color:#000
+}

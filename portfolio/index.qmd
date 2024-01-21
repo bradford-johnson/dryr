@@ -2,33 +2,30 @@
 format:
   html:
     page-layout: full
+    anchor-sections: false
 execute:
   echo: false
   output: false
 ---
 
-<div class="alert alert-dismissible alert-warning">
-  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-  <h4 class="alert-heading">Under Construction!</h4>
-  <p class="mb-0">We're Cooking Up Something Fresh! Check Back Soon!</p>
+<h1 class="title center">Bradford Johnson</h1>
+<p class="subtitle lead center">Data Analyst & Visualization Engineer</p>
+<div class="description center">Translating complex data into meaningful narratives that drive business success.
 </div>
 
-<h1 class="title">Bradford Johnson</h1>
-<p class="subtitle lead">Data Analyst & Visualization Engineer</p>
-<div class="description">Design and implement visually striking data visualizations, translating complex data into meaningful narratives that drive business success.</div>
-<br>
-```{=html}
-<button type="button" class="btn btn-outline-primary">Get in touch</button>
-```
+<div class="button style">
+<a href="mailto:your@email.com" class="btn btn-outline-primary center">Get in touch</a>
+</div> 
 
-<br>
+<!---bold span--->
+<!--- <span class="bold-text"></span>--->
 
 <div class="card-group">
 <div class="card bg-secondary mb-3">
 <div class="card-body">
 <h4 class="card-title">Data Visualization</h4>
 <p class="card-text"> 
-  Through skillful storytelling and attention to industry standards, I create deliverables that not only inform but truly engage. The goal is not just to present data; it's to immerse the audience in a meaningful and memorable data-driven experience.
+  I specialize in creating custom visuals that enhance data understanding, and dashboards that empower data-driven decision-making. My approach blends creativity and analytical rigor to deliver not just visuals, data analysis, and dashboards; but a unified and impactful data story that resonates with your business objectives.
 </p>
 </div>
 </div>
@@ -46,39 +43,49 @@ execute:
 <div class="card-group">
 <div class="card bg-secondary mb-3">
 <div class="card-body">
-<h4 class="card-title">Data Visualization</h4>
+<h4 class="card-title">Data Storytelling</h4>
 <p class="card-text"> 
-  Through skillful storytelling and attention to industry standards, I create deliverables that not only inform but truly engage. The goal is not just to present data; it's to immerse the audience in a meaningful and memorable data-driven experience.
+  Each data narrative is distinctive, tailored to suit the specific requirements of your business. Collaborating closely with you, I strive to comprehend your unique objectives, guaranteeing that the visualizations I craft harmonize with your goals and captivate your audience. My personalized methodology ensures that data insights are delivered in the most compelling manner possible.
 </p>
 </div>
 </div>
 
 <div class="card bg-secondary mb-3">
 <div class="card-body">
-<h4 class="card-title">Data Warehousing & Pipelines</h4>
+<h4 class="card-title">Data Analysis & Insights</h4>
 <p class="card-text"> 
-  Experienced in building distributed systems and ETL pipelines, I specialize in creating unified data ecosystems. I streamline workflows and ensure seamless data transformation, aiming to facilitate insightful decision-making across the entire system.
+  Unraveling the nuances of customer sentiment, exploring the intricacies of lifetime value, and dynamically evaluating trends, I navigate the complexities of data with a keen and experiential touch. Beyond marketing, these insights seamlessly blend into a comprehensive analytical framework, ensuring a thorough understanding for strategic decision-making across various facets of your business.
 </p>
 </div>
 </div>
 </div>
 
-<br>
-
+<!---center title in this div--->
 <div class="card">
 <div class="card-body">
-<h4 class="card-title">About Me</h4>
-<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="#" class="card-link">Card link</a>
-<a href="#" class="card-link">Another link</a>
+<h4 class="card-title center">About Me</h4>
+<p class="card-text">
+Hi, I'm Ford—a data analyst with a distinct flair for crafting compelling visuals that tell stories using ggplot2 and other libraries. I leverage Google Cloud for ETL pipelines using tools like Dataform and BigQuery. Create interactive dashboards using Looker Studio, Shiny and Tableau. My experience spans Google Analytics, web analytics, SEO, social research, and IT. Currently learning React, Node.js, and D3 for data visualization and data-driven app development. I contribute to businesses' success by transforming data into compelling stories that empower informed decision-making and shape strategic success.
+</p>
 </div>
 </div>
 
-<br>
+<!---add picture--->
 
+<!---center this div--->
+<div class="card">
+<div class="card-body center">
+<h4 class="card-title">Gallery</h4>
+<p class="card-text">A sample of my work</p>
+</div>
+</div>
 
+<!---add visual gallery grid--->
+::: gallery
+![](visuals/owid-energy.png){.lightbox group="gallery" width="65%"} ![](visuals/topgolf.png){.lightbox group="gallery" width="30%"}
+![](visuals/african-languages.png){.lightbox group="gallery" width="35%"} ![](visuals/seinfeld-sentiment.png){.lightbox group="gallery" width="60%"}
 
+:::
 <!---<div class="chart"></div>--->
 
 ```{ojs}
