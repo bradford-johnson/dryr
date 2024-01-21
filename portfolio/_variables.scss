@@ -286,13 +286,114 @@ th {
 
 /* css styles */
 #chart {
-  text-align: center;
+  //text-align: left;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  //align-items: center;
+  //justify-content: center;
 }
 
 nav a.nav-link:hover {
   border-bottom: 2px solid #333;
   /* You can customize the color and thickness */
+}
+
+// .card {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-evenly;
+//   margin: 10px;
+//   padding: 10px;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   width: calc(33% - 40px);
+//   min-width: 300px;
+// }
+
+// .card-header h3 {
+//   margin: 0px;
+//   font-size: 1.5rem;
+//   flex: 1;
+// }
+
+// .card-header {
+//   background-color: white;
+//   display: flex;
+//   //align-items: center;
+// }
+
+// .card-body p {
+//   margin: 0;
+//   font-size: 1.1rem;
+// }
+
+.card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: ;
+  --bs-card-subtitle-color: ;
+  --bs-card-border-width: 1px;
+  --bs-card-border-color: #fff;
+  --bs-card-border-radius: 0.25rem;
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(0.25rem - 1px);
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(52, 58, 64, 0.25);
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: ;
+  --bs-card-bg: #fff;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  color: var(--bs-body-color);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+h4.card-title {
+  color: #1a1a1a;
+}
+
+.card-body.center {
+  // align-items: center;
+  // justify-content: center;
+  // align-content: center;
+  text-align: center;
+}
+
+h1.title.center {
+  text-align: center;
+  align-self: center;
+}
+
+p.subtitle.lead.center {
+  text-align: center;
+}
+
+.description.center {
+  text-align: center;
+}
+
+h4.card-title.center {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: bold;
+  color:#000
 }

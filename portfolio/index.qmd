@@ -2,14 +2,92 @@
 format:
   html:
     page-layout: full
+    anchor-sections: false
 execute:
   echo: false
   output: false
 ---
 
-```{=html}
-<div id="chart"></div>
-```
+<h1 class="title center">Bradford Johnson</h1>
+<p class="subtitle lead center">Data Analyst & Visualization Engineer</p>
+<div class="description center">Translating complex data into meaningful narratives that drive business success.
+</div>
+
+<div class="button style">
+<a href="mailto:your@email.com" class="btn btn-outline-primary center">Get in touch</a>
+</div> 
+
+<!---bold span--->
+<!--- <span class="bold-text"></span>--->
+
+<div class="card-group">
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<h4 class="card-title">Data Visualization</h4>
+<p class="card-text"> 
+  I specialize in creating custom visuals that enhance data understanding, and dashboards that empower data-driven decision-making. My approach blends creativity and analytical rigor to deliver not just visuals, data analysis, and dashboards; but a unified and impactful data story that resonates with your business objectives.
+</p>
+</div>
+</div>
+
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<h4 class="card-title">Data Warehousing & Pipelines</h4>
+<p class="card-text"> 
+  Experienced in building distributed systems and ETL pipelines, I specialize in creating unified data ecosystems. I streamline workflows and ensure seamless data transformation, aiming to facilitate insightful decision-making across the entire system.
+</p>
+</div>
+</div>
+</div>
+
+<div class="card-group">
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<h4 class="card-title">Data Storytelling</h4>
+<p class="card-text"> 
+  Each data narrative is distinctive, tailored to suit the specific requirements of your business. Collaborating closely with you, I strive to comprehend your unique objectives, guaranteeing that the visualizations I craft harmonize with your goals and captivate your audience. My personalized methodology ensures that data insights are delivered in the most compelling manner possible.
+</p>
+</div>
+</div>
+
+<div class="card bg-secondary mb-3">
+<div class="card-body">
+<h4 class="card-title">Data Analysis & Insights</h4>
+<p class="card-text"> 
+  Unraveling the nuances of customer sentiment, exploring the intricacies of lifetime value, and dynamically evaluating trends, I navigate the complexities of data with a keen and experiential touch. Beyond marketing, these insights seamlessly blend into a comprehensive analytical framework, ensuring a thorough understanding for strategic decision-making across various facets of your business.
+</p>
+</div>
+</div>
+</div>
+
+<!---center title in this div--->
+<div class="card">
+<div class="card-body">
+<h4 class="card-title center">About Me</h4>
+<p class="card-text">
+Hi, I'm Ford—a data analyst with a distinct flair for crafting compelling visuals that tell stories using ggplot2 and other libraries. I leverage Google Cloud for ETL pipelines using tools like Dataform and BigQuery. Create interactive dashboards using Looker Studio, Shiny and Tableau. My experience spans Google Analytics, web analytics, SEO, social research, and IT. Currently learning React, Node.js, and D3 for data visualization and data-driven app development. I contribute to businesses' success by transforming data into compelling stories that empower informed decision-making and shape strategic success.
+</p>
+</div>
+</div>
+
+<!---add picture--->
+
+<!---center this div--->
+<div class="card">
+<div class="card-body center">
+<h4 class="card-title">Gallery</h4>
+<p class="card-text">A sample of my work</p>
+</div>
+</div>
+
+<!---add visual gallery grid--->
+::: gallery
+![](visuals/owid-energy.png){.lightbox group="gallery" width="65%"} ![](visuals/topgolf.png){.lightbox group="gallery" width="30%"}
+![](visuals/african-languages.png){.lightbox group="gallery" width="35%"} ![](visuals/seinfeld-sentiment.png){.lightbox group="gallery" width="60%"}
+
+:::
+<!---<div class="chart"></div>--->
+
 ```{ojs}
 d3 = require("d3")
 
