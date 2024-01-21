@@ -10,6 +10,7 @@ website:
   
   google-analytics: "G-1BB9B4C1GN"
   
+  favicon: "visuals/favicon.png"
   navbar:
     background: light
     title: false
@@ -29,3 +30,4 @@ format:
   html:
     theme: "_variables.scss"
     toc: true
+    link-external-newwindow: true

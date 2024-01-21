@@ -14,7 +14,7 @@ execute:
 </div>
 
 <div class="button style">
-<a href="mailto:your@email.com" class="btn btn-outline-primary center">Get in touch</a>
+<a href="mailto:bradfordljohnson@outlook.com" class="btn btn-outline-primary center">Get in touch</a>
 </div> 
 
 <!---bold span--->
